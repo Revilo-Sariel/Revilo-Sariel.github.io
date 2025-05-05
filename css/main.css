@@ -949,7 +949,7 @@ pre .javascript .function {
 }
 .main-inner {
   margin: 0 auto;
-  width: calc(100% - 20px);
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .main-inner {
@@ -971,7 +971,7 @@ pre .javascript .function {
 }
 .header-inner {
   margin: 0 auto;
-  width: calc(100% - 20px);
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .header-inner {
@@ -1199,7 +1199,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #035724;
+  background: #90f2ed;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1413,7 +1413,7 @@ pre .javascript .function {
   box-sizing: border-box;
   margin: 0 auto;
   text-align: center;
-  width: calc(100% - 20px);
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .footer-inner {
@@ -2190,7 +2190,7 @@ ul.breadcrumb li + li:last-child {
 .header {
   margin: 0 auto;
   position: relative;
-  width: calc(100% - 20px);
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .header {
@@ -2208,18 +2208,18 @@ ul.breadcrumb li + li:last-child {
   }
 }
 .header-inner {
-  background: var(--content-bg-color);
+  background: rgba(255,255,255,0.8);
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   overflow: hidden;
   padding: 0;
   position: absolute;
   top: 0;
-  width: 240px;
+  width: 300px;
 }
 @media (min-width: 1200px) {
   .header-inner {
-    width: 240px;
+    width: 300px;
   }
 }
 @media (max-width: 991px) {
@@ -2241,12 +2241,12 @@ ul.breadcrumb li + li:last-child {
   }
 }
 .content-wrap {
-  background: var(--content-bg-color);
+  background: rgba(255,255,255,0.8);
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   box-sizing: border-box;
   padding: 40px;
-  width: calc(100% - 252px);
+  width: calc(100% - 312px);
 }
 @media (max-width: 991px) {
   .content-wrap {
@@ -2388,7 +2388,7 @@ ul.breadcrumb li + li:last-child {
   box-shadow: none;
   margin-top: 100%;
   position: static;
-  width: 240px;
+  width: 300px;
 }
 @media (max-width: 991px) {
   .sidebar {
@@ -2399,12 +2399,12 @@ ul.breadcrumb li + li:last-child {
   display: none;
 }
 .sidebar-inner {
-  background: var(--content-bg-color);
+  background: rgba(255,255,255,0.8);
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   box-sizing: border-box;
   color: var(--text-color);
-  width: 240px;
+  width: 300px;
   opacity: 0;
 }
 .sidebar-inner.affix {
@@ -2615,4 +2615,46 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
+}
+body {
+  background: url("/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+}
+.sidebar {
+  background-color: transparent;
+  opacity: 0.9;
+}
+.content-wrap {
+  opacity: 0.9;
+}
+.sidebar-inner {
+  background: rgba(255,255,255,0.9) none repeat scroll !important;
+}
+.header-inner {
+  background: rgba(255,255,255,0.9);
+}
+.post-block {
+  background: rgba(255,255,255,0.9) none repeat scroll !important;
+}
+.main-inner > .sub-menu,
+.main-inner > .post-block,
+.main-inner > .tabs-comment,
+.main-inner > .comments,
+.main-inner > .pagination {
+  background: rgba(245,245,245,0.42);
+}
+body {
+  color: #000;
+}
+.posts-expand .post-title-link {
+  color: #000;
+}
+.posts-expand .post-meta-container {
+  color: #800;
+}
+.post-toc .nav .nav-child {
+  display: block;
 }
